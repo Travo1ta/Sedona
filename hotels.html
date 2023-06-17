@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normaliz.css" />
+	 <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,12 +17,13 @@
     </style>
     <title>Каталог</title>
   </head>
+
   <body>
     <div class="wrapper">
       <header class="page-header">
         <nav class="navigation">
           <a class="page-header-logo">
-            <img src="img/logo.png" alt="логотип седона" />
+            <img src="img/logo.png" alt="логотип седона" width="139" height="70" />
           </a>
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-active">
@@ -34,25 +36,32 @@
               <a class="navigation-link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
-          <div class="navigation-user">
-            <a class="navigation-icon" href="#">
+
+			 <ul class="navigation-list navigation-user">
+				<li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden"> Поиск </span>
             </a>
-
-            <a class="navigation-icon" href="#">
+				</li>
+				<li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden"> Любимое </span>
               <span class="navigation-icon-counter">12</span>
             </a>
+				</li>
+				<li class="navigation-item">
+            <a class="button button-hier" href="#">Хочу сюда!</a>
+				</li>
+			</ul>
 
-            <a class="button" href="#">Хочу сюда!</a>
-          </div>
         </nav>
       </header>
+
       <main class="main-inner">
         <section class="inner-header">
           <h1 class="inner-header-titel">Гостиницы Седоны</h1>
-          <h2 class="visuali-hiden">Список гостинец с фильтрами</h2>
-          <a class="-hotels-link" href="#">Гостиницы</a>
+          <h2 class="visually-hidden">Список гостинец с фильтрами</h2>
+          <a class="hotels-link" href="#">Гостиницы</a>
           <form
             class="filter"
             action="https://echo.htmlacademy.ru"
@@ -140,14 +149,14 @@
                   <span class="visually-hidden">Изменить минимальную цену</span>
                 </button>
                 <button class="range-toggle range-toggle-max" type="button">
-                  <span class="vvisually-hidden"
+                  <span class="visually-hidden"
                     >Изменить максимальную цену</span
                   >
                 </button>
               </div>
             </fieldset>
-            <button class="apply-button" formmethod="get">Применить</button>
-            <button class="reset-button" type="reset">Сбросить</button>
+            <button class="button apply-button" formmethod="get">Применить</button>
+            <button id="b1" class="reset-button" type="reset">Сбросить</button>
           </form>
         </section>
         <section class="hotel-sorting">
@@ -182,7 +191,7 @@
               <a class="hotel-card-link" href="">
                 <img
                   class="hotel-img amara"
-                  src="#"
+                  src="img/hotel-1.png"
                   width="135"
                   height="90"
                   alt="Фото гостиницы Amara Resort & Spa"
@@ -210,7 +219,7 @@
               <a class="hotel-card-link" href="#">
                 <img
                   class="hotel-img amara"
-                  src="#"
+                  src="img/hotel-2.png"
                   width="135"
                   height="90"
                   alt="Фото мотеля Desert Quail Inn"
@@ -237,7 +246,7 @@
               <a class="hotel-card-link" href="">
                 <img
                   class="hotel-img amara"
-                  src="img/photo-1.png"
+                  src="img/hotel-3.png"
                   width="135"
                   height="90"
                   alt="Фото Villas At Poco Diablo"
@@ -249,7 +258,7 @@
                 <span class="hotel-price">От 2000 р.</span>
               </p>
               <a class="hotel-details-link button" href="">Подробнее</a>
-              <a class="hotel-book-link button" href="">В избранное</a>
+              <a class="hotel-book-link link-green button" href="">В избранном</a>
 
               
                 <h2 class="visually-hidden">2 звезды</h2>
@@ -263,7 +272,7 @@
               <a class="hotel-card-link" href="">
                 <img
                   class="hotel-img amara"
-                  src="#"
+                  src="img/hotel-4.png"
                   width="135"
                   height="90"
                   alt="Фото GreenTree Inn"
@@ -329,7 +338,7 @@
             method="post"
           >
             <p class="mailing-list-email">
-              <label class="visuali-hiden" for="mailing-list-email"
+              <label class="visually-hiden" for="mailing-list-email"
                 >email</label
               >
               <input
@@ -349,36 +358,36 @@
       </main>
       <footer class="page-footer">
         <section class="footer-social">
-          <h2 class="visuali-hiden">Седона в социальных сетях</h2>
+          <h2 class="visually-hidden">Седона в социальных сетях</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="social-button-tw" href="#">
-                <span class="visuali-hiden">Твитер</span>
+                <span class="visually-hiden">Твитер</span>
               </a>
             </li>
 
             <li class="footer-social-item">
               <a class="social-button-vk" href="#">
-                <span class="visuali-hiden">ВКонтакте</span>
+                <span class="visually-hiden">ВКонтакте</span>
               </a>
             </li>
 
             <li class="footer-social-item">
               <a class="social-button-fb" href="#">
-                <span class="visuali-hiden">Фейсбук</span>
+                <span class="visually-hiden">Фейсбук</span>
               </a>
             </li>
           </ul>
         </section>
         <section class="footer-contact">
-          <h2 class="visuali-hiden">Номер телефона</h2>
+          <h2 class="visually-hidden">Номер телефона</h2>
           <a class="cotacts-fone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-logo">
-          <h2 class="visuali-hiden">логотип htmlacademy</h2>
+          <h2 class="visually-hidden">логотип htmlacademy</h2>
           <div class="footer-foto">
             <img
-              src="img/Vector(1).png"
+              src="img/svg/logo_footer.svg"
               alt="логотип htmlacademy"
               width="115"
               height="34"

@@ -66,7 +66,40 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	background-color: #ffffff;
 }
+.button {
+	display: inline-block;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	background-color: #756257;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	/* текст по средине кнопки */
+	display: table-cell;
+	vertical-align: middle;
 
+	border: none;
+}
+.form-title {
+	margin-left: 312px;
+}
+.button-find {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	width: 575px;
+	height: 60px;
+	border-radius: 10px;
+}
+.button-hier {
+	width: 160px;
+	height: 37px;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 4px;
+}
 .navigation {
 	width: 1060px;
 	height: 70px;
@@ -156,22 +189,31 @@ input[type="radio"].visually-hidden {
 	height: 72px;
 	margin-left: 240px;
 	margin-top: 63px;
-	
 }
 .promo-description {
 	font-size: 22px;
-line-height: 36px;
-text-align: center;
-color: #333333;
-width: 720px;
-height: 36px;
-margin-left: 240px;
-margin-bottom: 80px;
+	line-height: 36px;
+	text-align: center;
+	color: #333333;
+	width: 720px;
+	height: 36px;
+	margin-left: 240px;
+	margin-bottom: 80px;
 }
 
 .search {
 	background: #ffffff;
 	text-align: center;
+}
+.search-titel {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+}
+.search-text {
+	font-size: 22px;
+	line-height: 26px;
+	color: #333333;
 }
 .mailing {
 	width: 100%;
@@ -189,6 +231,95 @@ margin-bottom: 80px;
 	font-weight: 400;
 	font-size: 40px;
 	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.inner-header {
+	width: 100%;
+	height: 408px;
+	background-image: url(../img/catalog-background.png);
+}
+.inner-header-titel {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 78px;
+	color: #ffffff;
+}
+.hotels-link {
+	font-size: 16px;
+	line-height: 21px;
+
+	color: #ffffff;
+}
+.filter-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	color: #ffffff;
+}
+.filter-section {
+	display: inline-block;
+}
+.apply-button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 21px;
+	width: 160px;
+	height: 48px;
+	background: #83b3d3;
+	border-radius: 4px;
+}
+.reset-button {
+	font-size: 18px;
+	line-height: 23px;
+	color: #ffffff;
+	background: none;
+	border: none;
+	padding: 0;
+}
+.hotel-found {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 39px;
+	/* identical to box height */
+
+	text-transform: uppercase;
+}
+.load-more {
+	width: 619.83px;
+	height: 60px;
+
+	background: #83b3d3;
+	border-radius: 4px;
+}
+.pagination {
+	list-style: none;
+}
+.pagination-link {
+	width: 55px;
+	height: 55px;
+	background-color: #83b3d3;
+	border-radius: 4px;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.pagination-curent {
+	background: #f2f2f2;
+}
+.mailing-list-titel {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+
 	text-align: center;
 	text-transform: uppercase;
 	color: #000000;
