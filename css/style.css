@@ -221,8 +221,30 @@ input[type="radio"].visually-hidden {
 	background-color: #fff;
 	background-image: url(../img/background.png);
 	text-align: center;
+	color: #ffffff;
 }
-
+.mailing-titel {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.mailing-text {
+	font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+}
+.mailing-button {
+	width: 200px;
+	height: 60px;
+	background: #83b3d3;
+	border-radius: 0px 10px 10px 0px;
+}
+.mailing-subscribe {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+}
 .cotacts-fone {
 	font-family: "PT Sans";
 	font-style: normal;
