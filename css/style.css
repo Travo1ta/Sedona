@@ -42,6 +42,7 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+	display: block;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -190,6 +191,9 @@ input[type="radio"].visually-hidden {
 	margin-left: 240px;
 	margin-top: 63px;
 }
+
+/* приимущества */
+
 .promo-description {
 	font-size: 22px;
 	line-height: 36px;
@@ -199,6 +203,108 @@ input[type="radio"].visually-hidden {
 	height: 36px;
 	margin-left: 240px;
 	margin-bottom: 80px;
+}
+
+.description-list {
+	display: flex;
+	list-style: none;
+	margin: 0 0;
+	padding: 0;
+}
+.description-item {
+	width: 400px;
+	height: 384px;
+	text-align: center;
+	background: rgba(131, 179, 211, 0.12);
+}
+.advantages-list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.advantages-item {
+	width: 400px;
+	height: 384px;
+	text-align: center;
+	background: rgba(131, 179, 211, 0.12);
+}
+.description-blue {
+	background: #83b3d3;
+}
+h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+.description-item h3 {
+	margin-top: 97px;
+}
+.description-item span {
+	margin-top: 30px;
+}
+.description-item p {
+	margin-top: 30px;
+}
+.advantages-item p {
+	margin-top: 20px;
+}
+.advantages p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #333333;
+}
+.description-blue h3 {
+	color: #ffffff;
+}
+.description-blue p {
+	color: #ffffff;
+}
+.description-blue span {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.house h3::before {
+	content: "";
+	display: block;
+	width: 75px;
+	height: 72px;
+	margin: 89px 0px 23px 163px;
+	background-image: url("../img/svg/icon-house.svg");
+	background-repeat: no-repeat;
+}
+.food h3::before {
+	content: "";
+	display: block;
+	width: 74px;
+	height: 70px;
+	margin: 89px 0px 23px 163px;
+	background-image: url("../img/svg/icon-food.svg");
+	background-repeat: no-repeat;
+}
+.gift h3::before {
+	content: "";
+	display: block;
+	width: 75px;
+	height: 72px;
+	margin: 85px 0px 23px 168px;
+	padding-bottom: 5px;
+	background-image: url("../img/svg/icon-gift.svg");
+	background-repeat: no-repeat;
+}
+
+.food {
+	background: #ffffff;
+	width: 400px;
+	min-height: 384px;
+}
+.road {
+	background: rgba(131, 179, 211, 0.2);
 }
 
 .search {
@@ -231,8 +337,8 @@ input[type="radio"].visually-hidden {
 }
 .mailing-text {
 	font-weight: 400;
-font-size: 22px;
-line-height: 26px;
+	font-size: 22px;
+	line-height: 26px;
 }
 .mailing-button {
 	width: 200px;
