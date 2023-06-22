@@ -102,12 +102,14 @@ input[type="radio"].visually-hidden {
 	border-radius: 4px;
 }
 .navigation {
-	width: 1060px;
-	height: 70px;
-	margin: 0 auto;
-}
-.page-header {
 	position: relative;
+	max-width: 1060px;
+	min-height: 70px;
+	top: 4px;
+	margin: -4px 0px 0px 70px;
+}
+
+.page-header {
 	background-color: #ffffff;
 	color: #000;
 }
@@ -135,21 +137,7 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	color: #000000;
 }
-.navigation-item:nth-child(1) {
-	flex: none;
-	order: 0;
-	flex-grow: 0;
-}
-.navigation-item:nth-child(2) {
-	flex: none;
-	order: 1;
-	flex-grow: 0;
-}
-.navigation-item:nth-child(3) {
-	flex: none;
-	order: 2;
-	flex-grow: 0;
-}
+
 
 .navigation-user {
 	left: 75.09%;
@@ -180,29 +168,22 @@ input[type="radio"].visually-hidden {
 	background: #ffffff;
 	text-align: center;
 }
-.promo-title {
+h1 {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
 	text-transform: uppercase;
-	width: 720px;
-	height: 72px;
-	margin-left: 240px;
 	margin-top: 63px;
 }
 
-/* приимущества */
+/* преимущества */
 
-.promo-description {
+.promo-first p {
 	font-size: 22px;
 	line-height: 36px;
-	text-align: center;
 	color: #333333;
-	width: 720px;
-	height: 36px;
-	margin-left: 240px;
-	margin-bottom: 80px;
+	margin-top: 31px;
 }
 
 .description-list {
@@ -283,7 +264,7 @@ h3 {
 	display: block;
 	width: 74px;
 	height: 70px;
-	margin: 89px 0px 23px 163px;
+	margin: 91px 0px 23px 163px;
 	background-image: url("../img/svg/icon-food.svg");
 	background-repeat: no-repeat;
 }
@@ -308,19 +289,30 @@ h3 {
 }
 
 .search {
+	width: 100%;
+	min-height: 417px;
 	background: #ffffff;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
 }
 .search-titel {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 36px;
+	margin-top: 91px;
 }
 .search-text {
 	font-size: 22px;
 	line-height: 26px;
 	color: #333333;
 }
+.form-title {
+	margin: 56px 0px 0px 0px;
+}
+
 .mailing {
 	width: 100%;
 	min-height: 411px;
@@ -328,21 +320,34 @@ h3 {
 	background-image: url(../img/background.png);
 	text-align: center;
 	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .mailing-titel {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: uppercase;
+	margin-top: 94px;
 }
 .mailing-text {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
 }
+
+.mailing-form {
+	display: flex;
+	align-items: center;
+}
+.field {
+	padding-left: 22px;
+}
+
 .mailing-button {
-	width: 200px;
-	height: 60px;
+	width: 205px;
+	height: 62px;
 	background: #83b3d3;
 	border-radius: 0px 10px 10px 0px;
 }
@@ -351,15 +356,34 @@ h3 {
 	font-size: 20px;
 	line-height: 26px;
 }
+
+/* footer */
+
+.page-footer {
+	background: #fff;
+	width: 1200px;
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-social-list {
+	display: flex;
+	margin-left: 72px;
+}
+
 .cotacts-fone {
-	font-family: "PT Sans";
-	font-style: normal;
 	font-weight: 400;
 	font-size: 40px;
 	line-height: 40px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #000000;
+	margin-top: 40px;
+}
+.footer-foto {
+	margin-right: 72px;
 }
 
 .inner-header {
@@ -446,7 +470,17 @@ h3 {
 	line-height: 23px;
 	color: #333333;
 }
-.mailing-list-titel {
+.mailing-catalog {
+	position: relative;
+	left: 240px;
+	width: 800px;
+	min-height: 241px;
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mailing-catalog-titel {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
@@ -455,7 +489,7 @@ h3 {
 	text-transform: uppercase;
 	color: #000000;
 }
-.mailing-list-description {
+.mailing-catalog-description {
 	font-size: 22px;
 	line-height: 26px;
 	text-align: center;
