@@ -67,6 +67,12 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	background-color: #ffffff;
 }
+.page-header,
+.page-main,
+.page-footer,
+.main-inner {
+	width: 1200px;
+}
 .button {
 	display: inline-block;
 	font-family: inherit;
@@ -137,7 +143,15 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	color: #000000;
 }
-
+/* нижнее подчеркивание */
+.navigation-item-active {
+	color: #756257;
+	text-decoration: underline;
+	text-decoration-color: #756257;
+	text-underline-offset: 20px;
+	text-decoration-thickness: 2px;
+	text-underline-position: under;
+}
 
 .navigation-user {
 	left: 75.09%;
@@ -163,7 +177,6 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-first {
-	width: 1200px;
 	height: 282px;
 	background: #ffffff;
 	text-align: center;
@@ -289,7 +302,6 @@ h3 {
 }
 
 .search {
-	width: 100%;
 	min-height: 417px;
 	background: #ffffff;
 	text-align: center;
@@ -314,9 +326,8 @@ h3 {
 }
 
 .mailing {
-	width: 100%;
 	min-height: 411px;
-	background-color: #fff;
+	background-color: #ffffff;
 	background-image: url(../img/background.png);
 	text-align: center;
 	color: #ffffff;
@@ -342,9 +353,18 @@ h3 {
 	align-items: center;
 }
 .field {
+	width: 600px;
+	height: 60px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	align-items: center;
+	background: #f2f2f2;
+	border-radius: 10px 0px 0px 10px;
+	border: none;
 	padding-left: 22px;
+	margin-left: -8px;
 }
-
 .mailing-button {
 	width: 205px;
 	height: 62px;
@@ -436,12 +456,28 @@ h3 {
 
 	text-transform: uppercase;
 }
+hr {
+	width: 1055px;
+	color: #E6E6E6;
+	height: 1px;
+}
+.above {
+	
+	margin: 0px 0px 30px 73px;
+
+}
+.under {
+	
+	margin: 30px 0px 0px 73px;
+	
+}
 .load-more {
 	width: 619.83px;
 	height: 60px;
 
 	background: #83b3d3;
 	border-radius: 4px;
+	margin-left: 290px;
 }
 .pagination {
 	list-style: none;
@@ -495,17 +531,7 @@ h3 {
 	text-align: center;
 	color: #333333;
 }
-.field {
-	width: 600px;
-	height: 60px;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 26px;
-	align-items: center;
-	background: #f2f2f2;
-	border-radius: 10px 0px 0px 10px;
-	border: none;
-}
+
 .mailing-list-button {
 	width: 200px;
 	height: 60px;
