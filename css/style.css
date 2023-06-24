@@ -100,6 +100,9 @@ input[type="radio"].visually-hidden {
 	height: 60px;
 	border-radius: 10px;
 }
+.button-find:hover {
+	background-color: #604e43;
+}
 .button-hier {
 	width: 160px;
 	height: 37px;
