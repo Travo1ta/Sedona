@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,7 @@
     <div class="wrapper">
       <header class="page-header">
         <nav class="navigation">
-          <a class="page-header-logo">
+          <a class="page-logo" href="index.html">
             <img
               src="img/logo.png"
               alt="логотип седона"
@@ -36,22 +36,19 @@
               <a class="navigation-link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden"> Поиск </span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden"> Любимое </span>
-                <span class="navigation-icon-counter">12</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="button button-hier" href="#">Хочу сюда!</a>
-            </li>
-          </ul>
+
+          <div class="navigation-user">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden"> Поиск </span>
+            </a>
+
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden"> Любимое </span>
+              <span class="navigation-icon-counter"><img src="img/svg/number.svg" alt="число в счетчике" width="20" height="20"></span>
+            </a>
+
+            <a class="button button-hier" href="#">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
 
@@ -74,7 +71,7 @@
           </h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
-        <!-- Преимущества -->
+        
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ol class="description-list">
@@ -172,7 +169,7 @@
             </li>
           </ol>
         </section>
-        <!-- поиск -->
+     
         <section class="search">
           <h2 class="search-titel">Заинтересовались?</h2>
           <p class="search-text">
@@ -180,10 +177,10 @@
             предложения гостиниц в Седоне
           </p>
           <div class="form-title">
-            <button href="#" class="button button-find"> Поиск гостиницы в седоне</button>
+            <a href="#" class="button button-find"> Поиск гостиницы в седоне</a>
           </div>
         </section>
-        <!-- подписка -->
+       
         <section class="mailing">
           <h2 class="mailing-titel">Подпишитесь на рассылку</h2>
           <p class="mailing-text">
@@ -219,19 +216,25 @@
           <h2 class="visually-hidden">Седона в социальных сетях</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="social-button-tw" href="#">
-                <span class="visuali-hiden">Твитер</span>
+              <a
+                class="social-button-tw"
+                href="https://twitter.com/htmlacademy_ru"
+              >
+                <span class="visually-hiden">Твитер</span>
               </a>
             </li>
 
             <li class="footer-social-item">
-              <a class="social-button-vk" href="#">
+              <a class="social-button-vk" href="https://vk.com/HTMLAcademyRUS">
                 <span class="visuali-hiden">ВКонтакте</span>
               </a>
             </li>
 
             <li class="footer-social-item">
-              <a class="social-button-fb" href="#">
+              <a
+                class="social-button-fb"
+                href="https://fecebook.com/htmlacademy"
+              >
                 <span class="visuali-hiden">Фейсбук</span>
               </a>
             </li>
@@ -244,19 +247,17 @@
         <section class="footer-logo">
           <h2 class="visually-hidden">логотип htmlacademy</h2>
           <div class="footer-foto">
-            <object type="image/svg+xml" data="picture.svg">
+            <a class="footer-developer" href="https://htmlacademy.ru/">
               <img
                 src="img/svg/logo_footer.svg"
-                alt="логотип"
+                alt="логотип HTML Academy"
                 width="115"
                 height="34"
               />
-            </object>
+            </a>
           </div>
         </section>
       </footer>
     </div>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
