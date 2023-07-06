@@ -120,12 +120,11 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	align-items: center;
 	width: 1060px;
-	margin: auto;
+	margin: 0 auto;
 	margin-top: -10px;
 	margin-bottom: -4px;
 }
-.logo{
-	
+.logo {
 	align-self: flex-end;
 }
 
@@ -387,14 +386,18 @@ h3 {
 .page-footer {
 	background: #fff;
 	width: 1200px;
+}
+.page-footer-hotels {
+	margin-top: 141px;
+	
+}
+.footer-social {
+	width: 1200px;
 	height: 120px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-between;align-items: center;
 }
-
 .footer-social-list {
-	display: flex;
 	margin-left: 72px;
 }
 
@@ -405,14 +408,12 @@ h3 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #000000;
-	margin-top: 40px;
 }
 .footer-foto {
 	margin-right: 72px;
 }
 
 .inner-header {
-	
 	height: 408px;
 	background-image: url(../img/catalog-background.png);
 	margin-top: -66px;
@@ -550,7 +551,7 @@ hr {
 /* сортировка */
 .checked {
 	color: #83b3d3;
- }
+}
 .hotel-sorting {
 	display: flex;
 	align-items: center;
@@ -639,18 +640,4 @@ select:focus {
 }
 .link-green {
 	background: #7db54f;
-}
-
-.page-footer {
-	background: #fff;
-	width: 1200px;
-	height: 120px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer-social-list {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
