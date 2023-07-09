@@ -611,14 +611,19 @@ select:focus {
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+gap: 16px;
 	width: 340px;
-	height: 438px;
 	padding: 20px;
+	flex-shrink: 0;
+	margin-bottom: 10px;
 }
 .link-card {
-	
-
+	display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+margin-bottom: 20px;
 
 }
 
@@ -657,7 +662,9 @@ select:focus {
 	line-height: 23px;
 	color: #333333;
 }
-
+.hotel-details-link a {
+color: #f2f2f2;
+}
 .hotel-details-link {
 	width: 133.01px;
 	height: 37px;
@@ -665,11 +672,20 @@ select:focus {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
 }
+
 .hotel-book-link {
 	width: 140.94px;
 	height: 37px;
 	border-radius: 4px;
+	background: #82B3D3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .link-green {
 	background: #7db54f;
