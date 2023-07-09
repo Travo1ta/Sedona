@@ -354,20 +354,21 @@ h3 {
 
 .mailing-form {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 .field {
-	width: 600px;
+	width: 592px;
 	height: 60px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 26px;
-	align-items: center;
 	background: #f2f2f2;
 	border-radius: 10px 0px 0px 10px;
 	border: none;
 	padding-left: 22px;
 	margin-left: -8px;
+	flex: 1 0 592px;
 }
 .mailing-button {
 	width: 205px;
@@ -389,13 +390,13 @@ h3 {
 }
 .page-footer-hotels {
 	margin-top: 141px;
-	
 }
 .footer-social {
 	width: 1200px;
 	height: 120px;
 	display: flex;
-	justify-content: space-between;align-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
 .footer-social-list {
 	margin-left: 72px;
@@ -597,14 +598,52 @@ select:focus {
 	display: flex;
 	flex-wrap: wrap;
 
+	width: 1056px;
+	margin: 0 auto;
+	margin-top: 53px;
 	background: #ffffff;
 }
-
+.figure-card img {
+	width: 100%;
+}
 .hotel-card {
-	height: 438px;
+	border: 1px solid rebeccapurple;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	align-items: center;
 	width: 340px;
+	height: 438px;
 	padding: 20px;
-	gap: 18px;
+}
+.link-card {
+	
+
+
+}
+
+.rating-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-self: stretch;
+}
+.rating-card-number {
+	width: 160px;
+	height: 37px;
+	background: #f2f2f2;
+	border-radius: 4px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hotel-rating-number {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+
+	text-transform: uppercase;
 }
 .hotel-title {
 	font-weight: 700;
@@ -618,13 +657,7 @@ select:focus {
 	line-height: 23px;
 	color: #333333;
 }
-.hotel-rating-number {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 21px;
 
-	text-transform: uppercase;
-}
 .hotel-details-link {
 	width: 133.01px;
 	height: 37px;
