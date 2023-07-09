@@ -597,34 +597,34 @@ select:focus {
 .hotel-list {
 	display: flex;
 	flex-wrap: wrap;
-
+	justify-content: space-between;
 	width: 1056px;
 	margin: 0 auto;
 	margin-top: 53px;
 	background: #ffffff;
+	flex-shrink: 0;
 }
 .figure-card img {
 	width: 100%;
 }
+
 .hotel-card {
-	border: 1px solid rebeccapurple;
+	
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
 	align-items: flex-start;
-gap: 16px;
-	width: 340px;
+	margin: 10px;
+	max-width: 31%;
 	padding: 20px;
-	flex-shrink: 0;
-	margin-bottom: 10px;
+	gap: 16px;
 }
 .link-card {
 	display: flex;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
-margin-bottom: 20px;
-
+	justify-content: space-between;
+	align-items: center;
+	align-self: stretch;
+	margin-bottom: 20px;
 }
 
 .rating-card {
@@ -661,9 +661,16 @@ margin-bottom: 20px;
 	font-size: 18px;
 	line-height: 23px;
 	color: #333333;
+	display: flex;
+	
+	
+	
+}
+.hotel-type {
+	margin-right: 66px;
 }
 .hotel-details-link a {
-color: #f2f2f2;
+	color: #f2f2f2;
 }
 .hotel-details-link {
 	width: 133.01px;
@@ -675,14 +682,13 @@ color: #f2f2f2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
 }
 
 .hotel-book-link {
 	width: 140.94px;
 	height: 37px;
 	border-radius: 4px;
-	background: #82B3D3;
+	background: #82b3d3;
 	display: flex;
 	align-items: center;
 	justify-content: center;
