@@ -17,16 +17,15 @@
     <div class="wrapper">
       <header class="page-header">
         <nav class="navigation">
-          <div class="logo">
-            <a class="page-logo" href="index.html">
-              <img
-                src="img/logo.png"
-                alt="логотип седона"
-                width="139"
-                height="70"
-              />
-            </a>
-          </div>
+          <a class="page-logo" href="index.html">
+            <img class="page-header-logo"
+              src="img/logo.png"
+              alt="логотип седона"
+              width="139"
+              height="70"
+            />
+          </a>
+
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-active">
               <a class="navigation-link active" href="index.html">Главная</a>
@@ -39,31 +38,27 @@
             </li>
           </ul>
 
-          <ul class="navigation-user">
-            <li>
-              <a class="navigation-link" href="#">
-                <span class="visuall-hidden"> Поиск </span>
+          <div class="navigation-user">
+            
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden"> Поиск </span>
               </a>
-            </li>
+            
 
-            <li>
-              <a class="navigation-link" href="#">
-                <span class="visuall-hidden"> Любимое </span>
+            
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden"> Любимое </span>
+					 <span class="navigation-icon-counter"
+					 ><img
+						src="img/svg/number.svg"
+						alt="число в счетчике"
+						width="20"
+						height="20"
+				  /></span>
               </a>
-            </li>
-            <li>
-              <a class="navigation-link" href="#">
-                <span class="navigation-icon-counter"
-                  ><img
-                    src="img/svg/number.svg"
-                    alt="число в счетчике"
-                    width="20"
-                    height="20"
-                /></span>
-              </a>
-            </li>
-            <li><a class="button button-hier" href="#">Хочу сюда!</a></li>
-          </ul>
+            
+            <a class="button button-hier" href="#">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
 
@@ -229,22 +224,32 @@
       <footer class="page-footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Седона в социальных сетях</h2>
-          <div class="footer-social-list">
-            <a
-              class="social-button-tw"
-              href="https://twitter.com/htmlacademy_ru"
-            >
-              <span class="visually-hiden">Твитер</span>
-            </a>
-
-            <a class="social-button-vk" href="https://vk.com/HTMLAcademyRUS">
-              <span class="visuali-hiden">ВКонтакте</span>
-            </a>
-
-            <a class="social-button-fb" href="https://fecebook.com/htmlacademy">
-              <span class="visuali-hiden">Фейсбук</span>
-            </a>
-          </div>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="social-button-tw"
+                href="https://twitter.com/htmlacademy_ru"
+              >
+                <span class="visually-hidden">Твитер</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="social-button-fb"
+                href="https://fecebook.com/htmlacademy"
+              >
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="social-button-youtube"
+                href="https://youtube.com/HTMLAcademyRUS"
+              >
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
 
           <div class="footer-contact">
             <h2 class="visually-hidden">Номер телефона</h2>

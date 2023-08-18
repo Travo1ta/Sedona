@@ -21,16 +21,16 @@
     <div class="wrapper">
       <header class="page-header">
         <nav class="navigation">
-          <div class="logo">
+          
             <a class="page-logo" href="index.html">
-              <img
+              <img class="page-header-logo"
                 src="img/logo.png"
                 alt="логотип седона"
                 width="139"
                 height="70"
               />
             </a>
-          </div>
+          
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link active" href="index.html">Главная</a>
@@ -43,31 +43,27 @@
             </li>
           </ul>
 
-          <ul class="navigation-user">
-            <li>
-              <a class="navigation-link" href="#">
-                <span class="visuall-hidden"> Поиск </span>
-              </a>
-            </li>
+          <div class="navigation-user">
+            
+				<a class="navigation-user-link" href="#">
+				  <span class="visually-hidden"> Поиск </span>
+				</a>
+			 
 
-            <li>
-              <a class="navigation-link" href="#">
-                <span class="visuall-hidden"> Любимое </span>
-              </a>
-            </li>
-            <li>
-              <a class="navigation-link" href="#">
-                <span class="navigation-icon-counter"
-                  ><img
-                    src="img/svg/number.svg"
-                    alt="число в счетчике"
-                    width="20"
-                    height="20"
-                /></span>
-              </a>
-            </li>
-            <li><a class="button button-hier" href="#">Хочу сюда!</a></li>
-          </ul>
+			 
+				<a class="navigation-user-link" href="#">
+				  <span class="visually-hidden"> Любимое </span>
+				  <span class="navigation-icon-counter"
+				  ><img
+					 src="img/svg/number.svg"
+					 alt="число в счетчике"
+					 width="20"
+					 height="20"
+				/></span>
+				</a>
+			 
+			 <a class="button button-hier" href="#">Хочу сюда!</a>
+		  </div>
         </nav>
       </header>
 
@@ -253,15 +249,18 @@
                 height="206"
                 alt="Фото гостиницы Amara Resort & Spa"
               />
-
-              <p class="hotel-title">
-                <a class="hotel-card-link" href="">Amara Resort & Spa</a>
-              </p>
+            </div>
+            <div class="hotel-title">
+              <a class="hotel-card-link" href="">Amara Resort & Spa</a>
             </div>
 
             <div class="hotel-type-price">
-              <span class="hotel-type">Гостиница</span>
-              <span class="hotel-price">От 4000 р.</span>
+              <div class="card-hotel-type">
+                <span class="hotel-type">Гостиница</span>
+              </div>
+              <div class="card-hotel-price">
+                <span class="hotel-price">От 4000 р.</span>
+              </div>
             </div>
             <div class="link-card">
               <a class="hotel-details-link button" href="">Подробнее</a>
@@ -290,14 +289,18 @@
                 height="206"
                 alt="Фото мотеля Desert Quail Inn"
               />
-
-              <p class="hotel-title">
-                <a class="hotel-card-link" href="">Desert Quail Inn</a>
-              </p>
             </div>
+            <div class="hotel-title">
+              <a class="hotel-card-link" href="">Desert Quail Inn</a>
+            </div>
+
             <div class="hotel-type-price">
-              <span class="hotel-type">Гостиница</span>
-              <span class="hotel-price">От 3000 р.</span>
+              <div class="card-hotel-type">
+                <span class="hotel-type">Гостиница</span>
+              </div>
+              <div class="card-hotel-price">
+                <span class="hotel-price">От 3000 р.</span>
+              </div>
             </div>
             <div class="link-card">
               <a class="hotel-details-link button" href="">Подробнее</a>
@@ -324,14 +327,18 @@
                 height="206"
                 alt="Фото Villas At Poco Diablo"
               />
-
-              <p class="hotel-title">
-                <a class="hotel-card-link" href="">Villas At Poco Diablo</a>
-              </p>
             </div>
+            <div class="hotel-title">
+              <a class="hotel-card-link" href="">Villas At Poco Diablo</a>
+            </div>
+
             <div class="hotel-type-price">
-              <span class="hotel-type">Гостиница</span>
-              <span class="hotel-price">От 2000 р.</span>
+              <div class="card-hotel-type">
+                <span class="hotel-type">Гостиница</span>
+              </div>
+              <div class="card-hotel-price">
+                <span class="hotel-price">От 2000 р.</span>
+              </div>
             </div>
             <div class="link-card">
               <a class="hotel-details-link button" href="">Подробнее</a>
@@ -359,14 +366,18 @@
                 height="206"
                 alt="Фото GreenTree Inn"
               />
-
-              <p class="hotel-title">
-                <a class="hotel-card-link" href="">GreenTree Inn</a>
-              </p>
             </div>
+            <div class="hotel-title">
+              <a class="hotel-card-link" href="">GreenTree Inn</a>
+            </div>
+
             <div class="hotel-type-price">
-              <span class="hotel-type">Гостиница</span>
-              <span class="hotel-price">От 3000 р.</span>
+              <div class="card-hotel-type">
+                <span class="hotel-type">Гостиница</span>
+              </div>
+              <div class="card-hotel-price">
+                <span class="hotel-price">От 3000 р.</span>
+              </div>
             </div>
             <div class="link-card">
               <a class="hotel-details-link button" href="">Подробнее</a>
@@ -386,11 +397,13 @@
             </div>
           </article>
 
+			
+
           <hr class="above" />
           <button class="button load-more" type="button">Загрузить ещё</button>
           <hr class="under" />
         </div>
-
+		  <div class="pagintion-container">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-curent">1</a>
@@ -420,6 +433,7 @@
             <option value="number">1</option>
           </select>
         </form>
+		  </div>
         <section class="mailing mailing-catalog">
           <h2 class="mailing-catalog-titel">Подпишитесь на рассылку</h2>
           <p class="mailing-catalog-description">
@@ -454,22 +468,32 @@
       <footer class="page-footer page-footer-hotels">
         <section class="footer-social">
           <h2 class="visually-hidden">Седона в социальных сетях</h2>
-          <div class="footer-social-list">
-            <a
-              class="social-button-tw"
-              href="https://twitter.com/htmlacademy_ru"
-            >
-              <span class="visually-hiden">Твитер</span>
-            </a>
-
-            <a class="social-button-vk" href="https://vk.com/HTMLAcademyRUS">
-              <span class="visuali-hiden">ВКонтакте</span>
-            </a>
-
-            <a class="social-button-fb" href="https://fecebook.com/htmlacademy">
-              <span class="visuali-hiden">Фейсбук</span>
-            </a>
-          </div>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="social-button-tw"
+                href="https://twitter.com/htmlacademy_ru"
+              >
+                <span class="visually-hidden">Твитер</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="social-button-fb"
+                href="https://fecebook.com/htmlacademy"
+              >
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="social-button-youtube"
+                href="https://youtube.com/HTMLAcademyRUS"
+              >
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
 
           <div class="footer-contact">
             <h2 class="visually-hidden">Номер телефона</h2>
