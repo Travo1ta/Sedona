@@ -88,6 +88,7 @@ footer {
 
 .button {
 	display: inline-block;
+	box-sizing: border-box;
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 700;
@@ -150,7 +151,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	padding: 0 70px;
+	padding: 0 110px;
 	margin-top: -2px;
 }
 .page-logo {
@@ -605,7 +606,7 @@ h3 {
 }
 .footer-link:focus svg {
 	border-radius: 10px;
-border: 3px solid var(--special-cold-light, #83B3D3);
+	border: 3px solid var(--special-cold-light, #83b3d3);
 }
 .footer-link:active svg {
 	opacity: 0.3;
@@ -618,16 +619,38 @@ border: 3px solid var(--special-cold-light, #83B3D3);
 	margin-top: -63px;
 }
 .inner-header-titel {
+	display: block;
+
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 78px;
 	color: #ffffff;
+	transform: translateX(-195px) translateY(35px);
 }
-.hotels-link {
-	font-size: 16px;
-	line-height: 21px;
-
-	color: #ffffff;
+.breadcrumbs {
+	display: flex;
+	list-style: none;
+	margin-left: 73px;
+	margin-top: -20px;
+	
+}
+.breadcrumbs-item {
+	margin-left: 32px;
+	position: relative;
+}
+.breadcrumbs-item::after {
+	position: absolute;
+	content: url("/sedona/img/svg/nav-link.svg");
+	top: 0;
+	right: 84px;
+}
+.breadcrumbs-link {
+	color: #FFF;
+font-family: PT Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 .filter-title {
 	font-weight: 700;
@@ -685,7 +708,6 @@ hr {
 	margin-right: 290px;
 }
 .load-more:hover {
-
 }
 .pagination-container {
 	display: flex;
@@ -722,6 +744,18 @@ hr {
 	text-transform: uppercase;
 	color: #ffffff;
 }
+.pagination-link:hover {
+	background-color: #68a2ca;
+}
+.pagination-link:focus {
+	border-radius: 4px;
+	border: 3px solid var(--special-warm-light, #756257);
+	background: var(--special-cold-dark, #68a2ca);
+}
+.pagination-link:active {
+	opacity: 0.3;
+}
+
 .pagination-item:not(:last-child) {
 	margin-right: 8px;
 }
@@ -813,9 +847,30 @@ select:focus {
 	display: flex;
 	margin-left: 47px;
 }
-.view-item {
+.view-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 48px;
 	height: 48px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 2px solid var(--basic-gray, #e6e6e6);
+}
+.view-link svg {
+	fill: #000;
+}
+.view-link:hover {
+	border-radius: 4px;
+	border: 2px solid var(--special-cold-light, #83b3d3);
+}
+.view-link:focus {
+	border-radius: 4px;
+	border: 2px solid var(--special-cold-light, #83b3d3);
+}
+.view-link:active {
+	border-radius: 4px;
+	border: 2px solid var(--basic-black, #000);
 }
 .view-list li:nth-child(2) {
 	margin: 0px 8px 0px 8px;
