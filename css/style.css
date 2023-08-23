@@ -116,6 +116,13 @@ footer {
 .button-find:hover {
 	background-color: #604e43;
 }
+.button-find:focus {
+	border-radius: 10px;
+	border: 3px solid #83b3d3;
+}
+.button-find:active {
+	color: rgba(255, 255, 255, 0.3);
+}
 .button-hier {
 	display: block;
 	text-align: center;
@@ -129,12 +136,14 @@ footer {
 .button-hier:hover {
 	background-color: #615048;
 }
+.cotacts-fone:focus,
 .button-hier:focus {
 	border-radius: 4px;
-	border: 3px solid #83b3d3;		
+	border: 3px solid #83b3d3;
 }
+.cotacts-fone:active,
 .button-hier:active {
-	color: rgba(255, 255, 255, 0.30);
+	color: rgba(255, 255, 255, 0.3);
 }
 .page-header {
 	display: flex;
@@ -212,7 +221,6 @@ footer {
 	letter-spacing: -1px;
 	margin-top: 13px;
 	margin-left: 24px;
-	
 }
 .navigation-item-wrapper {
 	display: flex;
@@ -226,21 +234,24 @@ footer {
 	margin: auto;
 	fill: #000000;
 }
-
+.footer-link:hover svg,
+.cotacts-fone:hover,
 .navigation-link:hover {
 	color: #756257;
 }
+
+.cotacts-fone:active,
 .navigation-link:active {
-	color: rgba(117, 98, 87, 0.30);
+	color: rgba(117, 98, 87, 0.3);
 }
 
 .navigation-user-link:hover svg {
-	fill: #756257;	
-}
-.navigation-user-link:active svg {
-	fill: rgba(117, 98, 87, 0.30);
+	fill: #756257;
 }
 
+.navigation-user-link:active svg {
+	fill: rgba(117, 98, 87, 0.3);
+}
 
 /* нижнее подчеркивание */
 .navigation-item-active ::before {
@@ -463,11 +474,44 @@ h3 {
 	box-sizing: border-box;
 	margin-left: -8px;
 }
+.field:hover {
+	background-color: #e6e6e6;
+}
+.field:focus {
+	border-radius: 10px 0px 0px 10px;
+	border: 3px solid var(--special-cold-light, #83b3d3);
+	background: var(--basic-gray, #e6e6e6);
+}
+/* .field:invalid {
+	border-radius: 10px 0px 0px 10px;
+	border: 2px solid var(--status-error, #ff5757);
+	background: var(--basic-white, #fff);
+} */
 .mailing-button {
 	width: 205px;
 	height: 60px;
 	background: #83b3d3;
 	border-radius: 0px 10px 10px 0px;
+}
+.load-more:hover,
+.mailing-list-button:hover,
+.mailing-button:hover {
+	background-color: #68a2ca;
+}
+.mailing-list-button:focus,
+.mailing-button:focus {
+	border-radius: 0px 10px 10px 0px;
+	border: 3px solid var(--special-warm-light, #756257);
+	background: var(--special-cold-dark, #68a2ca);
+}
+.load-more:focus {
+	border-radius: 4px;
+	border: 3px solid var(--special-warm-light, #756257);
+}
+.load-more:active,
+.mailing-list-button:active,
+.mailing-button:active {
+	color: rgba(255, 255, 255, 0.3);
 }
 .mailing-subscribe {
 	font-weight: 700;
@@ -512,10 +556,22 @@ h3 {
 
 .footer-social-link {
 	display: block;
+	box-sizing: border-box;
 	height: 20px;
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.footer-social-link:hover {
+	background-color: #68a2ca;
+}
+.footer-social-link:focus {
+	border-radius: 10px;
+	border: 3px solid var(--special-cold-light, #83b3d3);
+}
+.footer-social-link:active {
+	background-color: #68a2ca;
+	opacity: 0.3;
 }
 .social-button-tw {
 	background-image: url(/sedona/img/svg/twiter.svg);
@@ -540,6 +596,19 @@ h3 {
 }
 .footer-foto {
 	margin-right: 72px;
+}
+.footer-icon {
+	fill: #000;
+}
+.footer-link:hover svg {
+	fill: #756257;
+}
+.footer-link:focus svg {
+	border-radius: 10px;
+border: 3px solid var(--special-cold-light, #83B3D3);
+}
+.footer-link:active svg {
+	opacity: 0.3;
 }
 
 .inner-header {
@@ -615,7 +684,10 @@ hr {
 	margin-left: 290px;
 	margin-right: 290px;
 }
-.pagintion-container {
+.load-more:hover {
+
+}
+.pagination-container {
 	display: flex;
 	width: 1056px;
 	margin: 0;
