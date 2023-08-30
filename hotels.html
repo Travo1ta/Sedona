@@ -153,6 +153,7 @@
               <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
+
           <form
             class="filter"
             action="https://echo.htmlacademy.ru"
@@ -236,31 +237,58 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="filter-section">
               <legend class="filter-title">Стоимость, ₽:</legend>
-              <div class="price-controls">
-                <label class="min-price">
-                  <input type="text" name="min-price" value="0" />от</label
-                >
-                <label class="max-price">
-                  <input type="text" name="max-price" value="9000" />до</label
-                >
-              </div>
-              <div class="range-controls">
-                <button class="range-toggle range-toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену</span>
-                </button>
-                <button class="range-toggle range-toggle-max" type="button">
-                  <span class="visually-hidden"
-                    >Изменить максимальную цену</span
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <input
+                    class="range-input"
+                    type="text"
+                    id="min"
+                    name="min-price"
+                    value="0"
+                  />
+                  <label class="catalog-filter-label label-left" for="min"
+                    >от</label
                   >
-                </button>
+
+                  <input
+                    class="range-input"
+                    type="text"
+                    id="max"
+                    name="max-price"
+                    value="9000"
+                  />
+                  <label class="catalog-filter-label label-right" for="max"
+                    >до</label
+                  >
+                </div>
+
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; right: 56px">
+                    <button class="range-toggle range-toggle-min" type="button">
+                      <span class="visually-hidden"
+                        >Изменить минимальную цену</span
+                      >
+                    </button>
+                    <button class="range-toggle range-toggle-max" type="button">
+                      <span class="visually-hidden"
+                        >Изменить максимальную цену</span
+                      >
+                    </button>
+                  </div>
+                </div>
               </div>
             </fieldset>
-            <button class="button apply-button" formmethod="get">
-              Применить
-            </button>
-            <button id="b1" class="reset-button" type="reset">Сбросить</button>
+            <div class="applay-container">
+              <button class="button apply-button" formmethod="get">
+                Применить
+              </button>
+              <button id="b1" class="reset-button" type="reset">
+                Сбросить
+              </button>
+            </div>
           </form>
         </div>
 
@@ -269,14 +297,14 @@
           <p class="hotel-found">Найдено гостиниц: 38</p>
           <form class="sorting-type">
             <label class="visually-hidden" for="sorting">Сортировка</label>
-            
-              <select class="sorting" name="sorting" id="sorting">
-                <option value="cheap">Сначало дешевые</option>
-                <option value="popular">Сначало популярные</option>
-                <option value="expensive">Сначало дорогие</option>
-                <option value="comfort">Сначало комфортные</option>
-              </select>
-            
+
+            <select class="sorting" name="sorting" id="sorting">
+              <option value="cheap">Сначало дешевые</option>
+              <option value="popular">Сначало популярные</option>
+              <option value="expensive">Сначало дорогие</option>
+              <option value="comfort">Сначало комфортные</option>
+            </select>
+
             <button class="visually-hidden" type="submit">
               Отсортировать продукты
             </button>
@@ -339,13 +367,15 @@
 
           <article class="hotel-card">
             <div class="figure-card">
-              <img
-                class="hotel-img amara"
-                src="img/hotel-1.png"
-                width="300"
-                height="206"
-                alt="Фото гостиницы Amara Resort & Spa"
-              />
+              <a class="image-focus" href="#">
+                <img
+                  class="hotel-img amara"
+                  src="img/hotel-1.png"
+                  width="300"
+                  height="206"
+                  alt="Фото гостиницы Amara Resort & Spa"
+                />
+              </a>
             </div>
             <div class="hotel-title">
               <a class="hotel-card-link" href="">Amara Resort & Spa</a>
@@ -379,13 +409,15 @@
           </article>
           <article class="hotel-card">
             <div class="figure-card">
-              <img
-                class="hotel-img amara"
-                src="img/hotel-2.png"
-                width="300"
-                height="206"
-                alt="Фото мотеля Desert Quail Inn"
-              />
+              <a class="image-focus" href="#">
+                <img
+                  class="hotel-img amara"
+                  src="img/hotel-2.png"
+                  width="300"
+                  height="206"
+                  alt="Фото мотеля Desert Quail Inn"
+                />
+              </a>
             </div>
             <div class="hotel-title">
               <a class="hotel-card-link" href="">Desert Quail Inn</a>
@@ -417,13 +449,15 @@
           </article>
           <article class="hotel-card">
             <div class="figure-card">
-              <img
-                class="hotel-img amara"
-                src="img/hotel-3.png"
-                width="300"
-                height="206"
-                alt="Фото Villas At Poco Diablo"
-              />
+              <a class="image-focus" href="#">
+                <img
+                  class="hotel-img amara"
+                  src="img/hotel-3.png"
+                  width="300"
+                  height="206"
+                  alt="Фото Villas At Poco Diablo"
+                />
+              </a>
             </div>
             <div class="hotel-title">
               <a class="hotel-card-link" href="">Villas At Poco Diablo</a>
@@ -456,13 +490,15 @@
           </article>
           <article class="hotel-card">
             <div class="figure-card">
-              <img
-                class="hotel-img amara"
-                src="img/hotel-4.png"
-                width="300"
-                height="206"
-                alt="Фото GreenTree Inn"
-              />
+              <a class="image-focus" href="#">
+                <img
+                  class="hotel-img amara"
+                  src="img/hotel-4.png"
+                  width="300"
+                  height="206"
+                  alt="Фото GreenTree Inn"
+                />
+              </a>
             </div>
             <div class="hotel-title">
               <a class="hotel-card-link" href="">GreenTree Inn</a>
