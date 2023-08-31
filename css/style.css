@@ -639,18 +639,20 @@ h3 {
 	margin-top: -63px;
 }
 .inner-header-titel {
+	display: block;
 	position: relative;
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 78px;
 	color: #ffffff;
-	transform: translateX(-235px) translateY(35px);
+	transform: translateX(-280px) translateY(35px);
+	text-transform: capitalize;
 }
 .breadcrumbs {
 	display: flex;
 	list-style: none;
-	margin-left: 33px;
-	margin-top: -20px;
+	margin-left: 35px;
+	margin-top: -18px;
 }
 .breadcrumbs-item {
 	margin-left: 32px;
@@ -687,7 +689,7 @@ h3 {
 	margin-top: 45px;
 }
 .filter-section:nth-child(3) {
-	margin-left: 216px;
+	margin-left: 167px;
 }
 .filter-section {
 	border: none;
@@ -702,8 +704,16 @@ h3 {
 	color: #ffffff;
 }
 .filter-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	margin-top: 30px;
+	margin-left: 40px;
 }
+.filter-item:not(:last-child) {
+	margin-bottom: 13px;
+}
+
 
 .control-label {
 	font-size: 18px;
@@ -760,6 +770,7 @@ h3 {
 .range-wrapper-inputs {
 	display: flex;
 	justify-content: center;
+	margin-top: 34px;
 	margin-bottom: 32px;
 	position: relative;
 }
@@ -767,6 +778,94 @@ h3 {
 	border-right: none;
 	border-radius: 4px 0px 0px 4px;
 }
+.range-input:hover {
+	border-radius: 4px 0px 0px 4px;
+border: 2px solid var(--basic-white, #FFF);
+opacity: 0.6;
+}
+.range-input:nth-child(1):focus {
+border-radius: 4px 0px 0px 4px;
+border: 2px solid var(--basic-white, #FFF);
+box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+.range-input:focus {
+border-radius: 0px 4px 4px 0px;
+border: 2px solid var(--basic-white, #FFF);
+box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+.range-input:nth-child(1):active {
+border-radius: 4px 0px 0px 4px;
+border: 2px solid var(--basic-white, #FFF);
+background: var(--special-warm-light, #756257);
+}
+.range-input:active {
+border-radius: 0px 4px 4px 0px;
+border: 2px solid var(--basic-white, #FFF);
+background: var(--special-warm-light, #756257);
+}
+
+/* Control */
+.control {
+	display: block;
+	position: relative;
+	cursor: pointer;
+
+}
+
+
+/* Mark */
+.control-mark {
+	position: absolute;
+	top: 2px;
+	left: -40px;
+	width: 20px;
+	height: 20px;
+	
+	border-radius: 4px;
+	background: #fff;
+	border: none;
+}
+.control:hover .control-mark {
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.6);
+}
+.control:focus .control-mark {
+	border-radius: 4px;
+	border: 3px solid var(--special-cold-light, #83B3D3);
+	background: rgba(255, 255, 255, 0.60);
+}
+
+.control:active .control-mark {
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  width: 8.9px;
+  height: 12.2px;
+  border-right: 2px solid #3f5f72;
+  border-bottom: 2px solid #3f5f72;
+  transform: rotate(45deg) ;
+  
+  content: "";
+}
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+	border-radius: 50%;
+ }
+ .control-input[type="radio"]:checked + .control-mark::before {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 9px;
+	height: 9px;
+	background-color: #242424;
+	border-radius: 50%;
+	content: "";
+ }
 
 .catalog-filter-label {
 	display: flex;
@@ -829,7 +928,7 @@ h3 {
 }
 .reset-button:focus {
 	border-radius: 4px;
-border: 3px solid var(--special-cold-light, #83B3D3);
+	border: 3px solid var(--special-cold-light, #83b3d3);
 }
 .reset-button:active {
 	opacity: 0.3;
@@ -838,8 +937,8 @@ border: 3px solid var(--special-cold-light, #83B3D3);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 25px;
-	margin-left: 51px;
+	margin-top: 60px;
+	margin-left: 81px;
 }
 hr {
 	width: 1155px;
@@ -984,6 +1083,18 @@ hr {
 	appearance: none;
 	background: url(/sedona/img/svg/dropdown.svg) no-repeat right;
 	background-position-x: calc(100% - 18px);
+}
+.sorting:hover {
+	border-radius: 4px;
+border: 2px solid var(--special-cold-light, #83B3D3);
+}
+.sorting:focus {
+	border-radius: 4px;
+border: 2px solid var(--special-cold-light, #83B3D3);
+}
+.sorting:active {
+	border-radius: 4px;
+border: 2px solid var(--basic-gray, #E6E6E6);
 }
 .select-number {
 	width: 160px;
