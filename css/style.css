@@ -1291,6 +1291,10 @@ hr {
 	height: 100%;
 	background-color: rgba(255, 255, 255, 0.8);
 	z-index: 2;
+	display: non;
+}
+.modal-container-close {
+	display: block;
 }
 .modal-window {
 	position: relative;
@@ -1310,7 +1314,7 @@ hr {
 	display: flex;
 }
 .modal-input {
-	font-family: "PT Sans", sans-serif;;
+	font-family: "PT Sans", sans-serif;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -1323,8 +1327,7 @@ hr {
 	line-height: 40px;
 	margin: 0;
 	margin-bottom: 32px;
-	margin-right: 70px;
-	margin-left: -45px;
+	margin-right: 25px;
 	text-transform: uppercase;
 }
 .button-modal-closed {
@@ -1358,21 +1361,22 @@ hr {
 
 .button-modal-closed::before,
 .button-modal-closed::after {
-    position: absolute;
-    top: 26px;
-    left: 20px;
-    content: "";
-    width: 14px;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 26px;
+	left: 20px;
+	content: "";
+	width: 14px;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 1);
+	
 }
 
 .button-modal-closed::before {
-    transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .button-modal-closed::after {
-    transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 .modal-wrapper-date {
 	position: relative;
@@ -1387,7 +1391,6 @@ hr {
 	line-height: 40px;
 }
 .modal-input {
-
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 40px;
@@ -1398,23 +1401,22 @@ hr {
 }
 
 .modal-input:focus {
-  outline: 3px solid rgba(131, 179, 211, 1);
+	outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .modal-input[type="text"]:active {
-  outline: 2px solid rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
+	outline: 2px solid rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 1);
 }
-.arrival-text, 
+.arrival-text,
 .departure-text {
-    font-size: 16px;
-    line-height: 29px;
-    margin-left: 65px;
-    margin-bottom: 11px;
+	font-size: 16px;
+	line-height: 29px;
+	margin-left: 155px;
+	margin-bottom: 11px;
 }
 .arrival-text {
 	color: rgba(255, 87, 87, 1);
-	margin-left: 15px;
 }
 .modal-input-svg {
 	position: absolute;
@@ -1438,8 +1440,8 @@ hr {
 }
 .modal-input[type="number"]::-webkit-outer-spin-button,
 .modal-input[type="number"]::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+	appearance: none;
+	margin: 0;
 }
 .modal-number {
 	display: flex;
@@ -1515,25 +1517,25 @@ hr {
 .modal-input-minus:hover::before,
 .modal-input-plus:hover::after,
 .modal-input-plus:hover::before {
-    background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .modal-input-minus:focus::before,
 .modal-input-plus:focus::after,
 .modal-input-plus:focus::before {
-    background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .modal-input-minus:focus,
 .modal-input-plus:focus {
-    outline: 3px solid rgba(131, 179, 211, 1);
-    border-radius: 4px;
+	outline: 3px solid rgba(131, 179, 211, 1);
+	border-radius: 4px;
 }
 
 .modal-input-minus:active::before,
 .modal-input-plus:active::after,
 .modal-input-plus:active::before {
-    background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 .tooltip-svg:hover + .tooltip-wrapper {
 	display: block;
@@ -1604,7 +1606,7 @@ hr {
 	width: 575px;
 	display: inline-block;
 	height: 60px;
-	font-family: "PT Sans",sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	color: rgba(255, 255, 255, 1);
