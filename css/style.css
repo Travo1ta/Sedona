@@ -47,6 +47,7 @@ img {
   height: auto;
   display: block;
 }
+
 .page {
   color: #333333;
   font-family: "PT Sans", Arial, sans-serif;
@@ -271,7 +272,10 @@ footer {
   background-color: #756257;
   content: "";
 }
-
+.logo-velcom {
+	display: block;
+	
+}
 .promo-img {
   width: 100%;
   min-height: 485px;
@@ -633,15 +637,15 @@ h3 {
   opacity: 0.3;
 }
 .social-button-tw {
-  background-image: url(/sedona/img/svg/twiter.svg);
+  background-image: url(../img/svg/twiter.svg);
   width: 18px;
 }
 .social-button-fb {
-  background-image: url(/sedona/img/svg/social-facebook.svg);
+  background-image: url(../img/svg/social-facebook.svg);
   width: 10px;
 }
 .social-button-youtube {
-  background-image: url(/sedona/img/svg/social-youtube.svg);
+  background-image: url(../img/svg/social-youtube.svg);
   width: 20px;
 }
 
