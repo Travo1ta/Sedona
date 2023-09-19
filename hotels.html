@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" href="/sedona/img/favicon/favicon.ico" />
   </head>
 
   <body>
@@ -86,10 +85,7 @@
                 />
               </svg>
               <span class="visually-hidden"> Любимое </span>
-              <div
-                class="favorit-couter"
-                aria-label="количество отелей в ибранном"
-              >
+              <div class="favorit-couter">
                 <svg
                   width="20"
                   height="20"
@@ -106,12 +102,7 @@
             </a>
           </li>
           <li class="navigation-item want-here-wrapper">
-            <a
-              class="button button-hier"
-              aria-label="открыть окно поиска"
-              href="#"
-              >Хочу сюда!</a
-            >
+            <a class="button button-hier" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -289,7 +280,11 @@
               </div>
             </fieldset>
             <div class="applay-container">
-              <button class="button apply-button" formmethod="get">
+              <button
+                class="button apply-button"
+                formmethod="get"
+                type="button"
+              >
                 Применить
               </button>
               <button id="b1" class="reset-button" type="reset">
@@ -572,7 +567,7 @@
                 >email</label
               >
               <input
-                class="field"
+                class="field error"
                 placeholder="Ваш e-mail"
                 type="email"
                 name="mailing-list-email"
@@ -580,8 +575,8 @@
                 required
               />
             </p>
-            <button class="button mailing-list-button" type="submit">
-              <span class="mailing-list-subscribe">Подписаться</span>
+            <button class="button mailing-button" type="submit">
+              Подписаться
             </button>
           </form>
         </section>
