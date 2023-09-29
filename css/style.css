@@ -922,6 +922,7 @@ h3 {
 .range-wrapper-inputs .range-input:nth-child(1) {
   border-right: none;
   border-radius: 4px 0 0 4px;
+  appearance: textfield;
 }
 
 .range-input:hover {
@@ -1027,7 +1028,11 @@ h3 {
 .catalog-filter-label {
   display: flex;
   cursor: pointer;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .label-left {
