@@ -159,7 +159,7 @@ footer {
 .cotacts-fone:focus,
 .button-hier:focus {
   border-radius: 4px;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .hotel-details-link:active,
@@ -624,7 +624,7 @@ h3 {
 .hotel-book-link:focus,
 .load-more:focus {
   border-radius: 4px;
-  border: 3px solid var(--special-warm-light, #756257);
+  outline: 3px solid #756257;
 }
 
 .hotel-book-link:active,
@@ -1189,7 +1189,7 @@ hr {
 
 .pagination-link:focus {
   border-radius: 4px;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
   background: #68a2ca;
 }
 
@@ -1406,7 +1406,7 @@ hr {
 }
 
 .image-focus:focus img {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .figure-card:active {
@@ -1544,13 +1544,13 @@ hr {
   background: #7db54f;
 }
 
-.link-green:focus {
-  border-radius: 4px;
-  border: 3px solid #756257;
+.link-green:hover {
   background: #6c9e42;
 }
 
-.link-green:hover {
+.link-green:focus {
+  border-radius: 4px;
+  border: 3px solid #756257;
   background: #6c9e42;
 }
 
