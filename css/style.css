@@ -741,7 +741,7 @@ h3 {
 
 .footer-link:focus svg {
   border-radius: 10px;
-  border: 3px solid var(--special-cold-light, #83b3d3);
+  border: 3px solid #83b3d3;
 }
 
 .footer-link:active svg {
