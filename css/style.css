@@ -346,9 +346,15 @@ footer {
 
 .description-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  margin: 0 0;
+  margin: 0;
   padding: 0;
+}
+
+.description-image img {
+  width: 800px;
+  height: 384px;
 }
 
 .description-item {
