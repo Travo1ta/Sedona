@@ -345,16 +345,11 @@ footer {
 }
 
 .description-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.description-image img {
-  width: 800px;
-  height: 384px;
 }
 
 .description-item {
@@ -362,13 +357,6 @@ footer {
   height: 384px;
   text-align: center;
   background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .advantages-item {
