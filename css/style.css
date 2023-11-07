@@ -353,43 +353,45 @@ footer {
 }
 
 .description-first {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-column: 1 / -1;
 }
 
+.description-item img {
+  grid-column: span 2;
+}
+
 .description-second {
-  grid-column: 1 / -1;	
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1 / -1;
 }
 
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column: 1 /-1;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .description-item {
-  width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
   background: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item {
-  width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
   background: rgba(131, 179, 211, 0.12);
 }
 
-.description-blue {
+.description-card {
   background: #83b3d3;
 }
-
-.advantages-item h3 {
-  margin-bottom: 10px;
-}
-
 
 h3 {
   font-weight: 700;
@@ -403,18 +405,19 @@ h3 {
   margin-bottom: 27px;
 }
 
-.description-item span {
-  margin-top: 6px;
-}
-
 .description-item p {
   margin-top: 27px;
   text-indent: -10px;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 .advantages-item p {
-  margin-top: 20px;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.advantages-item h3 {
+  margin-top: 10px;
 }
 
 .advantages p {
@@ -424,15 +427,15 @@ h3 {
   color: #333333;
 }
 
-.description-blue h3 {
+.description-card h3 {
   color: #ffffff;
 }
 
-.description-blue p {
+.description-card p {
   color: #ffffff;
 }
 
-.description-blue span {
+.description-card span {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
