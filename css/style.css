@@ -1143,7 +1143,8 @@ h3 {
 .pagination-container {
   display: flex;
   width: 1056px;
-
+  margin-top: 25px;
+  margin-bottom: 45px;
   margin-left: 72px;
   align-items: center;
 }
