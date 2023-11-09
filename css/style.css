@@ -1121,7 +1121,7 @@ h3 {
   border-bottom: 2px solid #e6e6e6;
   margin-left: 72px;
   width: 1055px;
-  
+  margin-bottom: 0;
 }
 
 .load-more {
@@ -1143,8 +1143,7 @@ h3 {
 .pagination-container {
   display: flex;
   width: 1056px;
-  margin-top: 25px;
-  margin-bottom: 45px;
+
   margin-left: 72px;
   align-items: center;
 }
