@@ -41,7 +41,7 @@
               <a class="navigation-link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
-        </nav>
+        
         <ul class="navigation-user">
           <li>
             <a
@@ -103,6 +103,7 @@
             </a>
           </li>
         </ul>
+		  </nav>
         <a class="button button-hier" href="#">Хочу сюда!</a>
       </header>
 
@@ -111,10 +112,10 @@
           <h1 class="inner-header-titel">Гостиницы Седоны</h1>
           <h2 class="visually-hidden">Список гостинец с фильтрами</h2>
           <ul class="breadcrumbs">
+				<li class="visually-hidden">ссылка на главную</li>
             <li>
               <a
                 class="breadcrumbs-link"
-                aria-label="ссылка на главную"
                 href="index.html"
               >
                 <svg
@@ -133,9 +134,9 @@
                     <path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" />
                   </g>
                   <defs>
-                    <clipPath id="a">
+                    <clippath id="a">
                       <path fill="#fff" d="M0 0h12v12H0z" />
-                    </clipPath>
+                    </clippath>
                   </defs>
                 </svg>
               </a>
@@ -244,16 +245,18 @@
                     type="number"
                     name="min-price"
                     value="0"
+						  id="min-price"
                   />
-                  <label class="catalog-filter-label label-left">от</label>
+                  <label class="catalog-filter-label label-left " for="min-price">от</label>
 
                   <input
                     class="range-input"
                     type="number"
                     name="max-price"
                     value="9000"
+						  id="max-price"
                   />
-                  <label class="catalog-filter-label label-right">до</label>
+                  <label class="catalog-filter-label label-right" for="max-price">до</label>
                 </div>
 
                 <div class="range-scale">
@@ -286,7 +289,8 @@
         <section class="hotel-sorting">
           <h2 class="visually-hidden">Сортировка результатов поиска</h2>
           <p class="hotel-found">Найдено гостиниц: 38</p>
-          <form class="sorting-type">
+          <form class="sorting-type" action="https://echo.htmlacademy.ru/"
+            method="get">
             <label class="visually-hidden" for="sorting">Сортировка</label>
 
             <select class="sorting" name="sorting" id="sorting">
@@ -354,11 +358,11 @@
         </section>
 		  <section class="hotel-card">
         <div class="hotel-list">
-          <h3 class="visually-hidden">Результаты поиска</h3>
+          <h2 class="visually-hidden">Результаты поиска</h2>
 
           <article class="hotel">
             <a class="hotel-link" href="#"
-              ><h4 class="hotel-title">Amara Resort & Spa</h4>
+              ><h4 class="hotel-title">Amara Resort &amp; Spa</h4>
             </a>
 
             <img
@@ -503,7 +507,8 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-          <form class="sorting-page">
+          <form class="sorting-page" action="https://echo.htmlacademy.ru/"
+            method="get">
             <label for="triage">Гостиниц на странице:</label>
             <select class="select-number" name="triage" id="triage">
               <option value="4">4</option>
@@ -511,6 +516,9 @@
               <option value="2">2</option>
               <option value="1">1</option>
             </select>
+				<button class="visually-hidden" type="submit">
+              Показать количество
+            </button>
           </form>
         </div>
 </section>

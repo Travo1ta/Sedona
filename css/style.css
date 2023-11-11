@@ -104,7 +104,7 @@ footer {
   min-height: 37px;
   margin: 0;
   box-sizing: border-box;
-  padding: 7px 15px 6px;
+  padding: 7px 15px 7px;
   font-family: inherit;
   font-size: 16px;
   line-height: 24px;
@@ -116,7 +116,6 @@ footer {
   border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none;
-
   cursor: pointer;
 }
 
@@ -135,15 +134,31 @@ footer {
   background-color: #756257;
 }
 
+.hotel-details-link:hover,
+.button-hier:hover {
+  background-color: #604e43;
+}
+
+.button-hier:focus {
+  border-radius: 3px;
+  outline: 3px solid #83b3d3;
+}
+
 .hotel-details-link {
   background-color: #756257;
   width: 133px;
   min-height: 37px;
 }
 
+.hotel-details-link:focus {
+  background-color: #615048;
+  border-radius: 3px;
+  border: 3px solid #82b3d3;
+}
 
 .button-find {
   min-height: 60px;
+  padding: 14px 20px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -159,7 +174,7 @@ footer {
 
 .button-find:focus {
   border-radius: 10px;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .button-find:active {
@@ -197,7 +212,6 @@ footer {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  padding-right: 40px;
   margin-bottom: -5px;
 }
 
@@ -208,6 +222,7 @@ footer {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-right: 275px;
 }
 
 .navigation-link {
@@ -225,7 +240,7 @@ footer {
   align-items: center;
   margin: 0;
   padding: 0;
-
+  margin-left: 4px;
   list-style: none;
 }
 
@@ -322,7 +337,7 @@ footer {
     center 30.5%;
   background-repeat: no-repeat;
   background-size: auto, cover;
-  background-color: #ffffff;
+  background-color: #615861;
 }
 
 .promo-img img {
@@ -529,7 +544,7 @@ h3 {
 
 .mailing {
   min-height: 411px;
-  background-color: #ffffff;
+  background-color: #615861;
   background-image: url("../img/background.png");
   text-align: center;
   color: #ffffff;
@@ -613,7 +628,7 @@ h3 {
 }
 
 .apply-button:hover,
-.hotel-book-link:hover,
+.hotel-book:hover,
 .load-more:hover,
 .mailing-list-button:hover,
 .mailing-button:hover {
@@ -633,17 +648,17 @@ h3 {
 .mailing-list-button:focus,
 .mailing-button:focus {
   border-radius: 0 10px 10px 0;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
   background: #68a2ca;
 }
 
-.hotel-book-link:focus,
+.hotel-book:focus,
 .load-more:focus {
-  border-radius: 4px;
+  border-radius: 3px;
   outline: 3px solid #756257;
 }
 
-.hotel-book-link:active,
+.hotel-book:active,
 .load-more:active,
 .mailing-list-button:active,
 .mailing-button:active {
@@ -763,6 +778,7 @@ h3 {
 
 .inner-header {
   min-height: 408px;
+  background-color: #615861;
   background-image: url("../img/catalog-background.png");
   margin: 0;
   margin-top: -41px;
@@ -1111,7 +1127,7 @@ h3 {
 
 .reset-button:focus {
   border-radius: 4px;
-  border: 3px solid var(--special-cold-light, #83b3d3);
+  border: 3px solid  #83b3d3;
 }
 
 .reset-button:active {
@@ -1220,6 +1236,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -3px;
 }
 
 .mailing-catalog-titel {
@@ -1265,7 +1282,7 @@ h3 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  margin-top: 26px;
+  margin-top: 25px;
   margin-left: 71px;
 }
 
@@ -1357,9 +1374,13 @@ h3 {
 .view-list {
   list-style: none;
   display: flex;
-
   margin-left: auto;
 }
+
+.view-item {
+  margin-right: 4px;
+}
+
 
 .view-link {
   display: flex;
@@ -1418,7 +1439,7 @@ h3 {
 .hotel-card {
   max-width: 1056px;
   margin: 0 auto;
-  margin-top: 37px;
+  margin-top: 40px;
 }
 
 .hotel-list {
@@ -1517,7 +1538,7 @@ h3 {
 .hotel-rating-number {
   grid-area: rate;
   justify-self: end;
-  min-width: 145px;
+  min-width: 157px;
   margin: 0;
   padding: 7px 8px 6px;
   background-color: #f2f2f2;
