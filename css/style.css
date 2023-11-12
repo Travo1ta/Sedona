@@ -153,7 +153,7 @@ footer {
 .hotel-details-link:focus {
   background-color: #615048;
   border-radius: 3px;
-  border: 3px solid #82b3d3;
+  outline: 3px solid #82b3d3;
 }
 
 .button-find {
@@ -781,7 +781,7 @@ h3 {
   background-color: #615861;
   background-image: url("../img/catalog-background.png");
   margin: 0;
-  margin-top: -41px;
+  margin-top: -42px;
 }
 
 .inner-header-titel {
@@ -980,7 +980,7 @@ h3 {
 
 .range-input:active {
   border-radius: 0 4px 4px 0;
-  border: 2px solid var(--basic-white, #ffffff);
+  border: 2px solid #ffffff;
   background: #756257;
 }
 
@@ -1011,12 +1011,12 @@ h3 {
 
 .control-input:focus + .control-mark {
   border-radius: 4px;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   background: rgba(255, 255, 255, 0.6);
 }
 
 .control-input:not(:active):focus + .control-mark {
-  outline: 3px solid var(--special-cold-light);
+  border: 3px solid var(--special-cold-light);
 }
 
 .control:active .control-mark {
@@ -1028,13 +1028,12 @@ h3 {
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   top: 0;
-  left: 4px;
+  left: 5px;
   width: 8.9px;
   height: 12.2px;
   border-right: 2px solid #3f5f72;
   border-bottom: 2px solid #3f5f72;
   transform: rotate(45deg);
-
   content: "";
 }
 /* Radio */
@@ -1159,7 +1158,7 @@ h3 {
   line-height: normal;
   text-transform: uppercase;
   width: 619.83px;
-  height: 60px;
+  min-height: 60px;
   background: #83b3d3;
   border-radius: 4px;
   margin: 30px 290px 30px 220px;
@@ -1606,7 +1605,7 @@ h3 {
 }
 
 .link-green:active {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .star-card {
